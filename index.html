@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vivek Maladkar | Go-to-Market and Market Entry Advisor for SMEs</title>
+<meta name="description" content="Go-to-market strategy and market entry advice for established regional SMEs expanding into new markets. 15+ years in AI-enabled product and digital transformation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0B1F33; --muted:#4B5D70; --paper:#F7F9FC; --panel:#E9EFF7; --line:#CBD6E4;
+  --teal:#1F4FD8; --teal-ink:#FFFFFF; --amber:#F2A93B;
+  --head:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --body:"Public Sans","Segoe UI",system-ui,sans-serif;
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ink:#E8EEF6; --muted:#A3B3C6; --paper:#0A1726; --panel:#112338; --line:#223A54;
+    --teal:#6E94FF; --teal-ink:#0A1726; --amber:#F5B857; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --ink:#E8EEF6; --muted:#A3B3C6; --paper:#0A1726; --panel:#112338; --line:#223A54;
+  --teal:#6E94FF; --teal-ink:#0A1726; --amber:#F5B857; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--body);-webkit-text-size-adjust:100%}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+h1,h2,h3{font-family:var(--head);line-height:1.1;margin:0;letter-spacing:-.01em}
+h1{font-size:clamp(2.3rem,7vw,4.2rem);font-weight:700;max-width:16ch}
+h2{font-size:clamp(1.7rem,4.5vw,2.5rem);font-weight:700;max-width:22ch}
+h3{font-size:1.2rem;font-weight:700}
+p{margin:0;max-width:62ch}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+.brand{font:700 1.15rem var(--head);text-decoration:none}
+nav a{margin-left:20px;text-decoration:none;font-weight:500;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+.btn{display:inline-block;background:var(--teal);color:var(--teal-ink);padding:14px 24px;border-radius:6px;font-weight:600;text-decoration:none}
+.btn:hover{filter:brightness(1.08)}
+.btn.ghost{background:none;color:var(--ink);border:1.5px solid var(--line);margin-left:10px}
+.hero{padding:56px 0 40px}
+.hero p.lead{margin-top:22px;font-size:1.2rem;color:var(--muted)}
+.cta{margin-top:30px;display:flex;flex-wrap:wrap;gap:10px 0}
+.bridge{margin-top:44px;width:100%;height:auto}
+.bridge text{font:500 15px var(--body);fill:var(--ink)}
+.bridge .sub{fill:var(--muted);font-size:13px}
+.bridge .draw{stroke-dasharray:700;stroke-dashoffset:700;animation:draw 1.6s .2s ease-out forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){.bridge .draw{animation:none;stroke-dashoffset:0}html{scroll-behavior:auto}}
+section{padding:64px 0;border-top:1px solid var(--line)}
+section .intro{margin-top:16px;color:var(--muted)}
+.problems{display:grid;gap:30px;margin-top:36px;grid-template-columns:repeat(3,1fr)}
+.problems h3{padding-left:14px;border-left:4px solid var(--amber);margin-bottom:10px}
+.problems p{color:var(--muted)}
+.services{margin-top:34px;border-top:1px solid var(--line)}
+.svc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:8px 40px;padding:24px 0;border-bottom:1px solid var(--line)}
+.svc p{color:var(--muted)}
+.band{background:var(--panel);border-radius:10px;padding:48px 28px;margin:16px 0;border-top:none}
+.sectors{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px;padding:0;list-style:none}
+.sectors li{border:1.5px solid var(--line);background:var(--paper);padding:8px 16px;border-radius:999px;font-weight:500}
+.models{display:grid;gap:30px;margin-top:34px;grid-template-columns:repeat(3,1fr)}
+.models h3{margin-bottom:8px}
+.models p{color:var(--muted)}
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:start}
+.about p+p{margin-top:16px}
+.facts{margin:0;padding:22px;background:var(--panel);border-radius:8px;list-style:none}
+.facts li{padding:10px 0;border-bottom:1px solid var(--line)}
+.facts li:last-child{border:none}
+.facts b{display:block;font-family:var(--head)}
+.facts span{color:var(--muted);font-size:.95rem}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin:36px 0 0;padding:0;list-style:none;counter-reset:s}
+.steps li{padding-top:20px;border-top:3px solid var(--teal);counter-increment:s}
+.steps li::before{content:counter(s,decimal-leading-zero);display:block;font:700 .95rem var(--head);color:var(--teal);margin-bottom:8px}
+.steps h3{margin-bottom:6px}
+.steps p{color:var(--muted);font-size:.97rem}
+.ic{display:flex;gap:14px;align-items:center}
+.ico{width:32px;height:32px;flex:none;color:var(--teal)}
+.photo{aspect-ratio:4/5;width:100%;max-width:300px;border-radius:10px;border:2px dashed var(--line);display:grid;place-items:center;text-align:center;color:var(--muted);font-size:.95rem;padding:16px;background:var(--panel);overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover}
+.final{text-align:left}
+.posts{margin-top:30px;border-top:1px solid var(--line)}
+.post{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 24px;padding:20px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.post:hover h3{color:var(--teal)}
+.post span{color:var(--muted);font-size:.95rem}
+.more{display:inline-block;margin-top:22px;font-weight:600;color:var(--teal)}
+footer{padding:28px 0 40px;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}
+@media (max-width:760px){
+  nav a:not(.keep){display:none}
+  .problems,.models,.about,.svc,.steps{grid-template-columns:1fr}
+  .about{gap:30px}
+  .hero{padding-top:30px}
+  .btn.ghost{margin-left:0;margin-right:10px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="#top">Vivek Maladkar</a>
+    <nav aria-label="Main"><a href="#help">How I help</a><a href="#services">Services</a><a href="#about">About</a><a href="#insights">Insights</a><a class="keep" href="#contact">Contact</a></nav>
+  </header>
+
+  <main id="top">
+    <div class="hero">
+      <h1>Ready to grow beyond your home market?</h1>
+      <p class="lead">I'm an AI product leader and digital transformation specialist with 15+ years' experience. I help established regional SMEs shape their go-to-market strategy, test a new market and get their operations ready to deliver.</p>
+      <div class="cta">
+        <a class="btn" href="#contact">Book a 30-minute call</a>
+        <a class="btn ghost" href="#services">See services</a>
+      </div>
+      <svg class="bridge" viewBox="0 0 800 190" role="img" aria-label="A bridge connecting your established region to a new market">
+        <line x1="40" y1="150" x2="760" y2="150" stroke="var(--line)" stroke-width="2"/>
+        <rect x="40" y="70" width="14" height="80" fill="var(--ink)"/>
+        <rect x="746" y="70" width="14" height="80" fill="var(--ink)"/>
+        <path class="draw" d="M54 78 C 250 -10, 550 -10, 746 78" fill="none" stroke="var(--teal)" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="400" cy="19" r="6" fill="var(--amber)"/>
+        <text x="40" y="178">Your established region</text>
+        <text x="760" y="178" text-anchor="end">Your new market</text>
+        <text x="400" y="60" text-anchor="middle" class="sub">A go-to-market plan, operations ready</text>
+      </svg>
+    </div>
+
+    <section id="help">
+      <h2>A new market is harder to win than your first one</h2>
+      <p class="intro">You know your home region well. A new one has different customers, competitors, channels and rules. These are the three places I see expansion plans go wrong.</p>
+      <div class="problems">
+        <div><h3>The market isn't clear yet</h3><p>Which segment, which region, which first? I help you size the opportunity and choose where to start using evidence, not instinct.</p></div>
+        <div><h3>The go-to-market plan is vague</h3><p>Proposition, pricing, channels and partners must fit together. I turn them into one plan with owners, milestones and measures.</p></div>
+        <div><h3>The business isn't ready to deliver</h3><p>Systems, processes and teams built for one region strain in another. I map what must change and sequence it so growth doesn't break service.</p></div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>What I do</h2>
+      <div class="services">
+        <div class="svc"><div class="ic"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg><h3>Go-to-market strategy</h3></div><p>Target segments, proposition, pricing and channels, shaped into a plan your team can execute.</p></div>
+        <div class="svc"><div class="ic"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg><h3>Market entry assessment</h3></div><p>Opportunity sizing, competitor review and a clear recommendation on where and how to enter.</p></div>
+        <div class="svc"><div class="ic"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5zM3 13l9 5 9-5"/></svg><h3>Product and proposition design</h3></div><p>Adapting what you sell for a new market, with a roadmap and requirements your delivery team can build from.</p></div>
+        <div class="svc"><div class="ic"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11M4 6l1 1 2-2M4 12l1 1 2-2M4 18l1 1 2-2"/></svg><h3>Operating readiness</h3></div><p>Process mapping, business analysis and change planning so operations, technology and people can support expansion.</p></div>
+        <div class="svc"><div class="ic"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-8M22 20H2"/></svg><h3>Data and AI-enabled growth</h3></div><p>Practical AI and automation, from GenAI to RPA, to track performance, cut manual effort and deliver measurable efficiency gains.</p></div>
+      </div>
+    </section>
+
+    <section id="method">
+      <h2>A clear path from plan to launch</h2>
+      <p class="intro">Every engagement follows the same four stages, so you always know where you are and what comes next.</p>
+      <ol class="steps">
+        <li><h3>Assess</h3><p>Size the opportunity, review competitors and choose where to start.</p></li>
+        <li><h3>Plan</h3><p>Shape the proposition, pricing, channels and partners into one go-to-market plan.</p></li>
+        <li><h3>Launch</h3><p>Get operations, systems and teams ready, then enter the market in controlled steps.</p></li>
+        <li><h3>Scale</h3><p>Track results, cut manual effort with automation and AI, and expand what works.</p></li>
+      </ol>
+    </section>
+
+    <section class="band" id="experience">
+      <h2>15+ years of AI-enabled product and transformation work</h2>
+      <p class="intro">I'm currently a Senior Research Fellow (Industry Expert SME) at Nottingham Trent University. Before that, my work included Boots UK, Capgemini, Barry-Wehmiller and XD Innovation. My automation work across operations, finance and supply chain has delivered efficiency gains of 30–50%.</p>
+      <ul class="sectors"><li>Healthcare</li><li>Retail</li><li>CPG</li><li>Industrial</li><li>Higher education and research</li></ul>
+    </section>
+
+    <section id="models">
+      <h2>Ways to work together</h2>
+      <div class="models">
+        <div><h3>Advisory sprint</h3><p>Two to four weeks. A focused review of your market entry options, ending with a prioritised plan.</p></div>
+        <div><h3>Defined project</h3><p>Fixed scope and deliverables, such as a go-to-market strategy, an entry business case or a product roadmap.</p></div>
+        <div><h3>Fractional retainer</h3><p>Ongoing part-time product and growth leadership each month, while you build your in-house team.</p></div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="about">
+        <div>
+          <h2>About Vivek</h2>
+          <p style="margin-top:18px">I'm an AI product leader and digital transformation specialist based in the East Midlands, UK. My work sits between the people who define a problem and the people who build the answer.</p>
+          <p>I've delivered AI-enabled products, automation and enterprise transformation across healthcare, retail, CPG and industrial sectors. That has taught me to learn a new domain quickly, ask the questions people avoid, and keep stakeholders aligned when priorities collide.</p>
+        </div>
+        <div><div class="photo" id="photo">Add your photo here<br>(portrait, 4:5)</div>
+        <ul class="facts" style="margin-top:20px">
+          <li><b>Based in</b><span>East Midlands, UK. Remote or on site.</span></li>
+          <li><b>Experience</b><span>15+ years in AI, automation and digital transformation</span></li>
+          <li><b>Sectors</b><span>Healthcare, retail, CPG, industrial</span></li>
+        </ul></div>
+      </div>
+    </section>
+
+    <section id="insights">
+      <h2>Articles and posts</h2>
+      <p class="intro">Ideas on AI adoption, automation and product strategy, written and published by me on LinkedIn.</p>
+      <div class="posts">
+        <a class="post" href="https://www.linkedin.com/pulse/why-startups-failing-so-terribly-often-universally-vivek-maladkar" target="_blank" rel="noopener"><div><h3>Why are startups failing so terribly, so often and so universally?</h3><p>What drives the high failure rate of startups and what founders can learn from it.</p></div><span>Article, LinkedIn</span></a>
+        <a class="post" href="https://www.linkedin.com/pulse/beyond-automation-5-surprising-lessons-from-london-tech-maladkar-flzse" target="_blank" rel="noopener"><div><h3>Beyond Automation: 5 Surprising Lessons from London Tech Week 2026 on Moving from Supply Chain Chaos to Control</h3><p>Five lessons from London Tech Week 2026 on taking supply chains from chaos to control.</p></div><span>Article, LinkedIn</span></a>
+        <a class="post" href="https://www.linkedin.com/pulse/traditional-nine-hour-grind-procurement-becoming-relic-vivek-maladkar-yc8af" target="_blank" rel="noopener"><div><h3>The traditional "nine-hour grind" in procurement is becoming a relic of the past</h3><p>How automation and AI are removing the manual workload from procurement.</p></div><span>Article, LinkedIn</span></a>
+        <a class="post" href="https://www.linkedin.com/pulse/retail-2026-from-price-tags-ai-powered-infrastructure-vivek-maladkar-6zfae" target="_blank" rel="noopener"><div><h3>Retail 2026: From Price Tags to AI-Powered Infrastructure</h3><p>How retail is shifting from pricing and shelf labels to AI-powered infrastructure.</p></div><span>Article, LinkedIn</span></a>
+        <a class="post" href="https://www.linkedin.com/pulse/hidden-bottleneck-e-commerce-growth-why-visual-content-vivek-maladkar-3xwle" target="_blank" rel="noopener"><div><h3>The Hidden Bottleneck in E-Commerce Growth: Why Visual Content Scaling Is Breaking Modern Brands</h3><p>Why producing visual content at scale is holding back e-commerce growth.</p></div><span>Article, LinkedIn</span></a>
+        <a class="post" href="https://www.linkedin.com/pulse/collaborative-r-d-partnerships-innovations-speed-market-maladkar-1f" target="_blank" rel="noopener"><div><h3>Collaborative R&amp;D Partnerships for Innovations and Speed to Market</h3><p>How collaborative R&amp;D partnerships help organisations innovate and reach the market faster.</p></div><span>Article, LinkedIn</span></a>
+      </div>
+      <a class="more" href="https://www.linkedin.com/in/vivekmaladkar/recent-activity/all/">See all on LinkedIn</a>
+    </section>
+
+    <section id="contact" class="final">
+      <h2>Planning to enter a new market?</h2>
+      <p class="intro">Book a 30-minute conversation. We'll talk through your target market, your timeline and whether I'm the right fit.</p>
+      <div class="cta">
+        <a class="btn" href="mailto:vivek.maladkar@dhimahii.com">Email me</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/vivekmaladkar">Connect on LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>&copy; 2026 Vivek Maladkar. Go-to-market and transformation advisory, UK.</footer>
+</div>
+</body>
+</html>
